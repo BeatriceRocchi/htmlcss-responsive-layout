@@ -39,6 +39,12 @@ ul {
   text-align: center;
 }
 
+.debug2 {
+  background-color: rgb(221, 189, 108);
+  border: 1px solid gray;
+  text-align: center;
+}
+
 /* HEADER */
 header {
   background-color: var(--color-primary);
@@ -77,11 +83,25 @@ main {
   height: 600px;
 }
 
+/* PLANNIG SECTION */
+#plan-section {
+  background-color: var(--color-secondary);
+  padding: 60px 0;
+}
+
+#plan-section .col {
+  height: 600px;
+}
+
+#plan-section .col div {
+  height: 50%;
+}
+
 /* RESPONSIVE */
 /* Mobile: 375px
-Tablet: 810px
-Desktop: 1920px */
-@media screen and (min-width: 810px) {
+Tablet: 768px
+Desktop: 1200px */
+@media screen and (min-width: 768px) {
   .container {
     width: 730px;
   }
@@ -101,7 +121,7 @@ Desktop: 1920px */
   }
 }
 
-@media screen and (min-width: 1910px) {
+@media screen and (min-width: 1200px) {
   .container {
     width: 1140px;
   }
@@ -127,5 +147,13 @@ Desktop: 1920px */
 
   #demo-section .row .col {
     height: 300px;
+  }
+
+  #plan-section .row {
+    display: flex;
+  }
+
+  #plan-section .row .col {
+    width: 50%;
   }
 }

@@ -4,7 +4,7 @@
   --color-primary-light: #b5ddff;
   --color-secondary: #9792e4;
   --color-tertiary: #fdc15f;
-  --color-dark: #5b7081;
+  --color-dark: #333333;
   --color-light: #ffffff;
 }
 
@@ -149,6 +149,12 @@ main {
   height: 320px;
 }
 
+/* FOOTER */
+footer {
+  background-color: var(--color-dark);
+  padding: 40px 0;
+}
+
 /* RESPONSIVE */
 /* Mobile: 375px
 Tablet: 768px
@@ -254,7 +260,8 @@ Desktop: 1200px */
     width: calc(100% / 3);
   }
 
-  #start-section .container {
+  #start-section .container,
+  footer .container {
     width: 730px;
   }
 }

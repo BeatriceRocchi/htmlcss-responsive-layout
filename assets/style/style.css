@@ -118,6 +118,17 @@ main {
   height: 60%;
 }
 
+/* BENEFITS SECTION */
+#benefits-section {
+  background-color: var(--color-secondary);
+  padding: 70px 0;
+}
+
+#benefits-section .col {
+  height: 400px;
+  text-align: left;
+}
+
 /* RESPONSIVE */
 /* Mobile: 375px
 Tablet: 768px
@@ -160,6 +171,15 @@ Desktop: 1200px */
     width: 60%;
     text-align: left;
   }
+
+  #benefits-section .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #benefits-section .col {
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -196,5 +216,9 @@ Desktop: 1200px */
 
   #plan-section .row .col {
     width: 50%;
+  }
+
+  #benefits-section .col {
+    width: calc(100% / 3);
   }
 }

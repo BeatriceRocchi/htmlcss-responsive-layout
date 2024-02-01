@@ -4,6 +4,7 @@
   --color-primary-light: #b5ddff;
   --color-secondary: #9792e4;
   --color-tertiary: #fdc15f;
+  --color-black: #000000;
   --color-dark: #333333;
   --color-light: #ffffff;
 }
@@ -16,6 +17,22 @@
 
 body {
   font-family: "PT Sans", sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
 }
 
 a {
@@ -45,6 +62,29 @@ ul {
   text-align: center;
 }
 
+/* BUTTONS */
+.btn {
+  background-color: var(--color-light);
+  color: var(--color-black);
+  padding: 6px 12px;
+  border-radius: 40px;
+}
+
+.btn.blue {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+}
+
+.btn.violet {
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+}
+
+.btn-big {
+  color: var(--color-secondary);
+  padding: 30px 50px;
+}
+
 /* HEADER */
 header {
   background-color: var(--color-primary);
@@ -61,6 +101,13 @@ header .container {
   justify-content: space-between;
 }
 
+.hamburger-menu div {
+  width: 20px;
+  height: 3px;
+  background-color: var(--color-light);
+  margin: 4px 0;
+}
+
 .desktop-menu {
   display: none;
 }
@@ -72,7 +119,7 @@ main {
 
 /* DEMO SECTION */
 #demo-section {
-  padding: 50px 0;
+  padding: 50px 0 80px 0;
 }
 
 #demo-section .col {
@@ -83,10 +130,14 @@ main {
   height: 600px;
 }
 
+#demo-section .col.large div {
+  height: 50%;
+}
+
 /* PLANNIG SECTION */
 #plan-section {
   background-color: var(--color-secondary);
-  padding: 60px 0;
+  padding: 65px 0;
 }
 
 #plan-section .col {
@@ -99,7 +150,7 @@ main {
 
 /* TESTIMONIALS SECTION */
 #testimonials-section {
-  padding: 60px 0;
+  padding: 65px 0 110px 0;
 }
 
 #testimonials-section .testimonial {
@@ -121,7 +172,7 @@ main {
 /* BENEFITS SECTION */
 #benefits-section {
   background-color: var(--color-secondary);
-  padding: 70px 0;
+  padding: 80px 0 65px 0;
 }
 
 #benefits-section .col {
@@ -131,7 +182,7 @@ main {
 
 /* ABOUT SECTION */
 #about-section {
-  padding: 100px 0;
+  padding: 100px 0 155px 0;
 }
 
 #about-section .col:not(:last-child) {
@@ -240,12 +291,25 @@ Desktop: 1200px */
   }
 
   .desktop-menu ul li {
-    margin-left: 10px;
-    padding: 0 10px;
+    margin-left: 30px;
   }
 
   #demo-section .row .col {
     height: 300px;
+  }
+
+  #demo-section .col.large {
+    display: flex;
+  }
+
+  #demo-section .col.large .text-box {
+    width: 70%;
+    height: 100%;
+  }
+
+  #demo-section .col.large .img-box {
+    width: 30%;
+    height: 100%;
   }
 
   #plan-section .row {

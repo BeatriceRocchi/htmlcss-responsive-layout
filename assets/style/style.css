@@ -129,6 +129,16 @@ main {
   text-align: left;
 }
 
+/* ABOUT SECTION */
+#about-section {
+  padding: 100px 0;
+}
+
+#about-section .col {
+  height: 400px;
+  text-align: left;
+}
+
 /* RESPONSIVE */
 /* Mobile: 375px
 Tablet: 768px
@@ -179,6 +189,18 @@ Desktop: 1200px */
 
   #benefits-section .col {
     width: 50%;
+  }
+
+  #about-section .row {
+    display: flex;
+  }
+
+  #about-section .col.text-box {
+    width: calc(100% - 300px);
+  }
+
+  #about-section .col.img-box {
+    width: 300px;
   }
 }
 

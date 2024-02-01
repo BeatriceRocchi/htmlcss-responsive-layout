@@ -36,16 +36,20 @@ ul {
 .debug {
   background-color: goldenrod;
   border: 1px solid gray;
+  text-align: center;
 }
 
 /* HEADER */
 header {
   background-color: var(--color-primary);
   color: var(--color-light);
-  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  height: 75px;
 }
 
 header .container {
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -55,6 +59,24 @@ header .container {
   display: none;
 }
 
+/* MAIN */
+main {
+  padding-top: 75px;
+}
+
+/* DEMO SECTION */
+#demo-section {
+  padding: 50px 0;
+}
+
+#demo-section .col {
+  height: 300px;
+}
+
+#demo-section .col.large {
+  height: 600px;
+}
+
 /* RESPONSIVE */
 /* Mobile: 375px
 Tablet: 810px
@@ -62,6 +84,20 @@ Desktop: 1920px */
 @media screen and (min-width: 810px) {
   .container {
     width: 730px;
+  }
+
+  #demo-section .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #demo-section .row .col {
+    width: calc(100% / 3);
+    height: 600px;
+  }
+
+  #demo-section .row .col.large {
+    width: calc(100% / 3 * 2);
   }
 }
 
@@ -87,5 +123,9 @@ Desktop: 1920px */
   .desktop-menu ul li {
     margin-left: 10px;
     padding: 0 10px;
+  }
+
+  #demo-section .row .col {
+    height: 300px;
   }
 }

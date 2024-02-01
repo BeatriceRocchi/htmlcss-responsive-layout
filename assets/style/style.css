@@ -134,9 +134,19 @@ main {
   padding: 100px 0;
 }
 
-#about-section .col {
+#about-section .col:not(:last-child) {
   height: 400px;
   text-align: left;
+}
+
+/* GET STARTED SECTION */
+#start-section {
+  background-color: var(--color-secondary);
+  padding: 65px 0;
+}
+
+#start-section .text-box {
+  height: 320px;
 }
 
 /* RESPONSIVE */
@@ -242,5 +252,9 @@ Desktop: 1200px */
 
   #benefits-section .col {
     width: calc(100% / 3);
+  }
+
+  #start-section .container {
+    width: 730px;
   }
 }

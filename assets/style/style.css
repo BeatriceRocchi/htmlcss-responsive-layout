@@ -29,7 +29,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
 }
 
 h4 {
@@ -115,6 +115,9 @@ img {
 .btn.violet {
   background-color: var(--color-secondary);
   color: var(--color-light);
+  font-weight: 700;
+  padding: 8px 40px;
+  letter-spacing: 2px;
 }
 
 .btn-big {
@@ -296,12 +299,30 @@ main {
 /* BENEFITS SECTION */
 #benefits-section {
   background-color: var(--color-secondary);
+  color: var(--color-light);
   padding: 80px 0 65px 0;
 }
 
-#benefits-section .col {
-  height: 400px;
-  text-align: left;
+#benefits-section .card {
+  background-color: var(--color-light);
+  color: var(--color-text);
+  border-radius: 20px;
+  padding: 35px 30px;
+  height: 100%;
+}
+
+#benefits-section .card-num,
+#benefits-section h4 {
+  color: var(--color-secondary);
+}
+
+#benefits-section .card-num {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+#benefits-section a {
+  display: inline-block;
 }
 
 /* ABOUT SECTION */
@@ -339,7 +360,9 @@ Desktop: 1200px */
     width: 730px;
   }
 
-  header .container {
+  header .container,
+  #plan-section .container,
+  #testimonials-section .container {
     padding: 0 12px;
   }
 
@@ -389,6 +412,11 @@ Desktop: 1200px */
 
   #benefits-section .col {
     width: 50%;
+    padding: 12px;
+  }
+
+  #benefits-section .card-num {
+    font-size: 4rem;
   }
 
   #about-section .row {
@@ -407,6 +435,10 @@ Desktop: 1200px */
 @media screen and (min-width: 1200px) {
   .container {
     width: 1140px;
+  }
+
+  h3 {
+    font-size: 3rem;
   }
 
   .hamburger-menu {

@@ -29,7 +29,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 h4 {
@@ -236,33 +236,61 @@ main {
   vertical-align: middle;
 }
 
-/* #plan-section img {
-  object-fit: scale-down;
-} */
-
-/* #plan-section .col div {
-  height: 50%;
-} */
-
 /* TESTIMONIALS SECTION */
 #testimonials-section {
   padding: 65px 0 110px 0;
 }
 
-#testimonials-section .testimonial {
-  height: 340px;
+#testimonials-section h3 {
+  color: var(--color-secondary);
 }
 
-#testimonials-section .col {
-  height: 500px;
+#testimonials-section p {
+  font-size: 1.2rem;
+  line-height: 2rem;
 }
 
-#testimonials-section .img-box {
-  height: 40%;
+#testimonials-section .card {
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+  padding: 30px 15px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#testimonials-section .card .img-box {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#testimonials-section .card .img-box img {
+  object-fit: cover;
 }
 
 #testimonials-section .text-box {
-  height: 60%;
+  width: 100%;
+}
+
+#testimonials-section .testimonial-name {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+#testimonials-section .text-box span:first-child {
+  font-size: 4rem;
+  position: relative;
+  vertical-align: text-top;
+}
+
+#testimonials-section .text-box span:last-child {
+  font-size: 4rem;
+  position: relative;
+  vertical-align: text-top;
 }
 
 /* BENEFITS SECTION */
@@ -338,23 +366,19 @@ Desktop: 1200px */
     object-position: left;
   }
 
-  #testimonials-section .col {
-    display: flex;
-    align-items: center;
-    height: 280px;
+  #testimonials-section .card {
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   #testimonials-section .img-box,
   #testimonials-section .text-box {
-    height: 100%;
-  }
-
-  #testimonials-section .img-box {
-    width: 40%;
+    margin-bottom: 0;
   }
 
   #testimonials-section .text-box {
-    width: 60%;
+    width: 65%;
+    padding-right: 5px;
     text-align: left;
   }
 
@@ -436,7 +460,7 @@ Desktop: 1200px */
   #plan-section .row {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: baseline;
   }
 
   #plan-section .row .col {
@@ -446,6 +470,10 @@ Desktop: 1200px */
 
   #plan-section .card img {
     width: 70%;
+  }
+
+  #testimonials-section .text-box {
+    width: 75%;
   }
 
   #benefits-section .col {

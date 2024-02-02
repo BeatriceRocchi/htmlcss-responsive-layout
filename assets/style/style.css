@@ -40,6 +40,10 @@ a {
   color: inherit;
 }
 
+a:not(.btn):hover {
+  text-decoration: underline;
+}
+
 ul {
   list-style: none;
 }
@@ -85,6 +89,10 @@ ul {
   padding: 30px 50px;
 }
 
+.btn:hover {
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
 /* HEADER */
 header {
   background-color: var(--color-primary);
@@ -99,6 +107,10 @@ header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+header #logo img {
+  vertical-align: middle;
 }
 
 .hamburger-menu div {

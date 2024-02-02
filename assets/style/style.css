@@ -76,6 +76,14 @@ img {
   margin-bottom: 30px;
 }
 
+.mb-55 {
+  margin-bottom: 55px;
+}
+
+.mb-90 {
+  margin-bottom: 90px;
+}
+
 .debug {
   background-color: goldenrod;
   border: 1px solid gray;
@@ -201,16 +209,40 @@ main {
 /* PLANNIG SECTION */
 #plan-section {
   background-color: var(--color-secondary);
+  color: var(--color-light);
   padding: 65px 0;
 }
 
-#plan-section .col {
-  height: 600px;
+#plan-section .card {
+  background-color: var(--color-light);
+  color: var(--color-black);
+  padding: 30px 24px;
+  border-radius: 20px;
 }
 
-#plan-section .col div {
-  height: 50%;
+#plan-section .card p {
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 2rem;
 }
+
+#plan-section .card i {
+  background-color: var(--color-secondary);
+  display: inline-block;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  vertical-align: middle;
+}
+
+/* #plan-section img {
+  object-fit: scale-down;
+} */
+
+/* #plan-section .col div {
+  height: 50%;
+} */
 
 /* TESTIMONIALS SECTION */
 #testimonials-section {
@@ -393,12 +425,27 @@ Desktop: 1200px */
     vertical-align: bottom;
   }
 
+  #plan-section {
+    padding-top: 125px;
+  }
+
+  #plan-section .container {
+    width: 875px;
+  }
+
   #plan-section .row {
     display: flex;
+    justify-content: center;
+    align-items: flex-end;
   }
 
   #plan-section .row .col {
     width: 50%;
+    padding: 0 40px;
+  }
+
+  #plan-section .card img {
+    width: 70%;
   }
 
   #benefits-section .col {

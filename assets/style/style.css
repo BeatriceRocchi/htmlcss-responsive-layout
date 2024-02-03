@@ -584,21 +584,26 @@ footer a {
     margin-left: 30px;
   }
 
+  /* DEMO SECTION */
+  #demo-section .col .card p {
+    font-size: 1.1rem;
+  }
+
   #demo-section .col.large .card {
     display: flex;
     justify-content: space-between;
   }
 
   #demo-section .card:nth-child(1) {
-    min-height: 333px;
+    min-height: 385px;
   }
 
   #demo-section .col.large .text-box {
-    width: 60%;
+    width: 55%;
   }
 
   #demo-section .col.large .img-box {
-    width: 30%;
+    width: 40%;
     align-self: flex-end;
   }
 
@@ -606,12 +611,17 @@ footer a {
     vertical-align: bottom;
   }
 
+  /* PLANNING SECTION */
   #plan-section {
     padding-top: 125px;
   }
 
   #plan-section .container {
-    width: 875px;
+    width: 1000px;
+  }
+
+  #plan-section h3 {
+    font-size: 2.2rem;
   }
 
   #plan-section .row {
@@ -629,20 +639,41 @@ footer a {
     width: 70%;
   }
 
+  /* TESTIMONIALS SECTION */
   #testimonials-section .text-box {
     width: 75%;
+  }
+
+  /* BENEFITS SECTION */
+  #benefits-section .col {
+    width: calc(100% / 3);
+  }
+
+  /* ABOUT SECTION */
+  #about-section .container {
+    width: 1000px;
+  }
+
+  #about-section .row {
+    justify-content: space-between;
+  }
+
+  #about-section .col.text-box {
+    width: 60%;
   }
 
   #about-section .col {
     width: 25%;
   }
 
-  #benefits-section .col {
-    width: calc(100% / 3);
+  #about-section .img-box {
+    height: 250px;
+    width: 250px;
+    margin: 0 auto 30px auto;
   }
 
-  #start-section .container,
-  footer .container {
-    width: 730px;
+  #about-section .quotation-mark {
+    top: -40px;
+    left: 180px;
   }
 }
